@@ -1,8 +1,10 @@
+
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/database');
 const { exec } = require('child_process');
-require('dotenv').config();
+
 
 const bookRoutes = require('./routes/book.routes');
 const translationRoutes = require('./routes/translation.routes');
